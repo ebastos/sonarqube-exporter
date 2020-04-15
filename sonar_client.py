@@ -1,6 +1,8 @@
 import requests
 import os
 import datetime
+import json 
+import sys
 
 from influxdb import InfluxDBClient
 
@@ -11,7 +13,6 @@ INFLUX_URL = 'local.dev'
 INFLUX_USER = os.environ['INFLUX_USER']
 INFLUX_PASSWORD = os.environ['INFLUX_PASSWORD']
 INFLUX_DB = os.environ['INFLUX_DB']
-
 
 class SonarApiClient:
 
@@ -28,7 +29,6 @@ class SonarApiClient:
         ids = []
         for component in data['components']:
             dict = {
-                'id': component['id'],
                 'key': component['key']
             }
             ids.append(dict)
@@ -99,15 +99,14 @@ def main():
     # Collect metrics per project
     uri = '/api/measures/component'
     for item in ids:
-        project_id = item['id']
         project_key = item['key']
-        print(project_key, project_id)
-        project = Project(identifier=project_id, key=project_key)
-        component_id_query_param = 'componentId=' + project_id
+        project = Project(identifier=project_key, key=project_key)
+        component_id_query_param = 'component=' + project_key
         metric_key_query_param = 'metricKeys=' + comma_separated_metrics
-        measures = client.get_measures_by_component_id(uri + '?' + component_id_query_param + '&' + metric_key_query_param)
+        project_uri = f"{uri}?{component_id_query_param}&{metric_key_query_param}"
+        measures = client.get_measures_by_component_id(project_uri)
         project.set_metrics(measures)
         project.export_metrics()
 
 if __name__ == '__main__':
-    main
+    main()

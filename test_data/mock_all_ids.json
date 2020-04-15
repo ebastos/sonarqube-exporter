@@ -1,0 +1,87 @@
+{
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 100,
+      "total": 17
+    },
+    "components": [
+      {
+        "organization": "default-organization",
+        "key": "our-projects.authman",
+        "name": "our-projects.authman",
+        "qualifier": "TRK",
+        "project": "our-projects.authman"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.projectman",
+        "name": "our-projects.projectman",
+        "qualifier": "TRK",
+        "project": "our-projects.projectman"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.apigateway",
+        "name": "our-projects.apigateway",
+        "qualifier": "TRK",
+        "project": "our-projects.apigateway"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.notificationman",
+        "name": "our-projects.notificationman",
+        "qualifier": "TRK",
+        "project": "our-projects.notificationman"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.configman",
+        "name": "our-projects.configman",
+        "qualifier": "TRK",
+        "project": "our-projects.configman"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.loggingman",
+        "name": "our-projects.loggingman",
+        "qualifier": "TRK",
+        "project": "our-projects.loggingman"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.qaman",
+        "name": "our-projects.qaman",
+        "qualifier": "TRK",
+        "project": "our-projects.qaman"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.commonmanlibrary",
+        "name": "our-projects.commonmanlibrary",
+        "qualifier": "TRK",
+        "project": "our-projects.commonmanlibrary"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.commonmodel",
+        "name": "our-projects.commonmodel",
+        "qualifier": "TRK",
+        "project": "our-projects.commonmodel"
+      },
+      {
+        "organization": "default-organization",
+        "key": "web",
+        "name": "web",
+        "qualifier": "TRK",
+        "project": "web"
+      },
+      {
+        "organization": "default-organization",
+        "key": "our-projects.ent",
+        "name": "our-projects.ent",
+        "qualifier": "TRK",
+        "project": "our-projects.ent"
+      }
+    ]
+  }
+  

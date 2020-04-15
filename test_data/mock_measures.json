@@ -1,0 +1,584 @@
+{
+  "component": {
+    "id": "AXAWg9ocQEjhUUDgXhIA",
+    "key": "our-projects.authman",
+    "name": "our-projects.authman",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "reliability_remediation_effort",
+        "value": "467",
+        "bestValue": false
+      },
+      {
+        "metric": "ncloc",
+        "value": "44853"
+      },
+      {
+        "metric": "minor_violations",
+        "value": "15",
+        "bestValue": false
+      },
+      {
+        "metric": "new_coverage",
+        "periods": [
+          {
+            "index": 1,
+            "value": "84.2105263157895",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "84.2105263157895",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "new_vulnerabilities",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "reopened_issues",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "new_code_smells",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "new_info_violations",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "new_violations",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "blocker_violations",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "security_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "new_bugs",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "development_cost",
+        "value": "1345590",
+        "bestValue": false
+      },
+      {
+        "metric": "bugs",
+        "value": "62",
+        "bestValue": false
+      },
+      {
+        "metric": "new_reliability_rating",
+        "periods": [
+          {
+            "index": 1,
+            "value": "1.0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "1.0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "new_duplicated_blocks",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "classes",
+        "value": "23"
+      },
+      {
+        "metric": "security_review_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "violations",
+        "value": "345",
+        "bestValue": false
+      },
+      {
+        "metric": "new_duplicated_lines",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "open_issues",
+        "value": "345",
+        "bestValue": false
+      },
+      {
+        "metric": "new_technical_debt",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "new_line_coverage",
+        "periods": [
+          {
+            "index": 1,
+            "value": "84.2105263157895",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "84.2105263157895",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "new_minor_violations",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "new_maintainability_rating",
+        "periods": [
+          {
+            "index": 1,
+            "value": "1.0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "1.0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "comment_lines_density",
+        "value": "7.6",
+        "bestValue": false
+      },
+      {
+        "metric": "major_violations",
+        "value": "325",
+        "bestValue": false
+      },
+      {
+        "metric": "new_security_hotspots",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "duplicated_lines",
+        "value": "60",
+        "bestValue": false
+      },
+      {
+        "metric": "ncloc_language_distribution",
+        "value": "cs=1226;css=27872;js=15532;web=223"
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "0.1",
+        "bestValue": false
+      },
+      {
+        "metric": "new_security_remediation_effort",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "duplicated_blocks",
+        "value": "2",
+        "bestValue": false
+      },
+      {
+        "metric": "new_development_cost",
+        "periods": [
+          {
+            "index": 1,
+            "value": "2160.0",
+            "bestValue": false
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "2160.0",
+          "bestValue": false
+        }
+      },
+      {
+        "metric": "lines",
+        "value": "42096"
+      },
+      {
+        "metric": "new_lines_to_cover",
+        "periods": [
+          {
+            "index": 1,
+            "value": "38"
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "38"
+        }
+      },
+      {
+        "metric": "new_major_violations",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "quality_profiles",
+        "value": "[{\"key\":\"AW_JqYOOMS0lcr09PJrj\",\"language\":\"cs\",\"name\":\"Sonar way\",\"rulesUpdatedAt\":\"2020-01-21T19:52:07+0000\"},{\"key\":\"AW_JqW2IMS0lcr09PIuR\",\"language\":\"css\",\"name\":\"Sonar way\",\"rulesUpdatedAt\":\"2020-01-21T19:52:01+0000\"},{\"key\":\"AW_JqW8rMS0lcr09PIxR\",\"language\":\"js\",\"name\":\"Sonar way\",\"rulesUpdatedAt\":\"2020-01-21T19:52:01+0000\"},{\"key\":\"AW_JqXeOMS0lcr09PJMW\",\"language\":\"web\",\"name\":\"Sonar way\",\"rulesUpdatedAt\":\"2020-01-21T19:52:04+0000\"},{\"key\":\"AW_JqXgqMS0lcr09PJM4\",\"language\":\"xml\",\"name\":\"Sonar way\",\"rulesUpdatedAt\":\"2020-01-21T19:52:04+0000\"}]"
+      },
+      {
+        "metric": "functions",
+        "value": "1605"
+      },
+      {
+        "metric": "alert_status",
+        "value": "OK"
+      },
+      {
+        "metric": "files",
+        "value": "53"
+      },
+      {
+        "metric": "sqale_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "last_commit_date",
+        "value": "1586460644914"
+      },
+      {
+        "metric": "quality_gate_details",
+        "value": "{\"level\":\"OK\",\"conditions\":[{\"metric\":\"new_reliability_rating\",\"op\":\"GT\",\"period\":1,\"error\":\"4\",\"actual\":\"1\",\"level\":\"OK\"},{\"metric\":\"new_security_rating\",\"op\":\"GT\",\"period\":1,\"error\":\"4\",\"actual\":\"1\",\"level\":\"OK\"},{\"metric\":\"new_maintainability_rating\",\"op\":\"GT\",\"period\":1,\"error\":\"4\",\"actual\":\"1\",\"level\":\"OK\"},{\"metric\":\"new_coverage\",\"op\":\"LT\",\"period\":1,\"error\":\"60\",\"actual\":\"84.21052631578948\",\"level\":\"OK\"},{\"metric\":\"new_duplicated_lines_density\",\"op\":\"GT\",\"period\":1,\"error\":\"10\",\"actual\":\"0.0\",\"level\":\"OK\"},{\"metric\":\"new_duplicated_blocks\",\"op\":\"GT\",\"period\":1,\"error\":\"10\",\"actual\":\"0\",\"level\":\"OK\"}],\"ignoredConditions\":false}"
+      },
+      {
+        "metric": "cognitive_complexity",
+        "value": "42522",
+        "bestValue": false
+      },
+      {
+        "metric": "new_lines",
+        "periods": [
+          {
+            "index": 1,
+            "value": "9693"
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "9693"
+        }
+      },
+      {
+        "metric": "line_coverage",
+        "value": "55.8",
+        "bestValue": false
+      },
+      {
+        "metric": "file_complexity",
+        "value": "166.5"
+      },
+      {
+        "metric": "confirmed_issues",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "security_remediation_effort",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "effort_to_reach_maintainability_rating_a",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "new_reliability_remediation_effort",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "false_positive_issues",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "reliability_rating",
+        "value": "3.0",
+        "bestValue": false
+      },
+      {
+        "metric": "comment_lines",
+        "value": "3670"
+      },
+      {
+        "metric": "statements",
+        "value": "9077"
+      },
+      {
+        "metric": "new_security_rating",
+        "periods": [
+          {
+            "index": 1,
+            "value": "1.0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "1.0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "critical_violations",
+        "value": "4",
+        "bestValue": false
+      },
+      {
+        "metric": "lines_to_cover",
+        "value": "3358"
+      },
+      {
+        "metric": "new_duplicated_lines_density",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0.0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0.0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "info_violations",
+        "value": "1",
+        "bestValue": false
+      },
+      {
+        "metric": "coverage",
+        "value": "55.8",
+        "bestValue": false
+      },
+      {
+        "metric": "complexity",
+        "value": "6327"
+      },
+      {
+        "metric": "new_critical_violations",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "security_hotspots",
+        "value": "47",
+        "bestValue": false
+      },
+      {
+        "metric": "new_conditions_to_cover",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0"
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0"
+        }
+      },
+      {
+        "metric": "code_smells",
+        "value": "283",
+        "bestValue": false
+      },
+      {
+        "metric": "new_blocker_violations",
+        "periods": [
+          {
+            "index": 1,
+            "value": "0",
+            "bestValue": true
+          }
+        ],
+        "period": {
+          "index": 1,
+          "value": "0",
+          "bestValue": true
+        }
+      },
+      {
+        "metric": "duplicated_files",
+        "value": "2",
+        "bestValue": false
+      }
+    ]
+  }
+}
