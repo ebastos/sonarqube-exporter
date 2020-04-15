@@ -1,7 +1,6 @@
 import os
 import json
 from pytest_mock import mocker
-import mock
 from unittest.mock import MagicMock
 from influxdb import InfluxDBClient
 from datetime import datetime

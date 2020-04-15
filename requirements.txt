@@ -1,2 +1,5 @@
 requests
 influxdb
+pytest
+pytest-mock
+freezegun
