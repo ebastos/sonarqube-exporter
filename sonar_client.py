@@ -61,7 +61,9 @@ class SonarApiClient:
 
 
 class Project:
-
+    """
+        Class to handle project metrics and feed InfluxDB
+    """
     def __init__(self, identifier, key):
         self.id = identifier
         self.key = key
@@ -69,9 +71,15 @@ class Project:
         self.timestamp = datetime.utcnow().isoformat()
 
     def set_metrics(self, metrics):
+        """
+            Populates the metrics
+        """
         self.metrics = metrics
 
     def export_metrics(self):
+        """
+            Feeds metrics into InfluxDB
+        """
         influx_client = InfluxDBClient(
             host=INFLUX_URL,
             port=8086,
@@ -80,9 +88,11 @@ class Project:
             database=INFLUX_DB
         )
         influx_client.write_points(self._prepare_metrics())
-        
 
     def _prepare_metrics(self):
+        """
+            Helper method to massage data in desired format
+        """
         json_to_export = []
         for metric in self.metrics:
             one_metric = {
@@ -101,6 +111,9 @@ class Project:
 
 
 def main():
+    """
+        Runs from here
+    """
     # Fetch all projects IDs
     client = SonarApiClient(USER, PASSWORD)
     ids = client.get_all_ids('/api/components/search?qualifiers=TRK')
