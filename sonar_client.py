@@ -85,25 +85,29 @@ class Project:
         return json_to_export
 
 
-# Fetch all projects IDs
-client = SonarApiClient(USER, PASSWORD)
-ids = client.get_all_ids('/api/components/search?qualifiers=TRK')
+def main():
+    # Fetch all projects IDs
+    client = SonarApiClient(USER, PASSWORD)
+    ids = client.get_all_ids('/api/components/search?qualifiers=TRK')
 
-# Fetch all available metrics
-metrics = client.get_all_available_metrics('/api/metrics/search')
-comma_separated_metrics = ''
-for metric in metrics:
-    comma_separated_metrics += metric + ','
+    # Fetch all available metrics
+    metrics = client.get_all_available_metrics('/api/metrics/search')
+    comma_separated_metrics = ''
+    for metric in metrics:
+        comma_separated_metrics += metric + ','
 
-# Collect metrics per project
-uri = '/api/measures/component'
-for item in ids:
-    project_id = item['id']
-    project_key = item['key']
-    print(project_key, project_id)
-    project = Project(identifier=project_id, key=project_key)
-    component_id_query_param = 'componentId=' + project_id
-    metric_key_query_param = 'metricKeys=' + comma_separated_metrics
-    measures = client.get_measures_by_component_id(uri + '?' + component_id_query_param + '&' + metric_key_query_param)
-    project.set_metrics(measures)
-    project.export_metrics()
+    # Collect metrics per project
+    uri = '/api/measures/component'
+    for item in ids:
+        project_id = item['id']
+        project_key = item['key']
+        print(project_key, project_id)
+        project = Project(identifier=project_id, key=project_key)
+        component_id_query_param = 'componentId=' + project_id
+        metric_key_query_param = 'metricKeys=' + comma_separated_metrics
+        measures = client.get_measures_by_component_id(uri + '?' + component_id_query_param + '&' + metric_key_query_param)
+        project.set_metrics(measures)
+        project.export_metrics()
+
+if __name__ == '__main__':
+    main
