@@ -1,8 +1,7 @@
-import requests
+from datetime import datetime
 import os
-import datetime
-import json 
-import sys
+import requests
+
 
 from influxdb import InfluxDBClient
 
@@ -15,33 +14,48 @@ INFLUX_PASSWORD = os.environ['INFLUX_PASSWORD']
 INFLUX_DB = os.environ['INFLUX_DB']
 
 class SonarApiClient:
+    """
+        This class talks to the Sonarqube API
+    """
 
     def __init__(self, user, passwd):
         self.user = user
         self.passwd = passwd
 
     def _make_request(self, endpoint):
-        r = requests.get(BASE_URL + endpoint, auth=(self.user, self.passwd))
-        return r.json()
-    
+        """
+            Helper function to interact with the web API
+        """
+        response = requests.get(BASE_URL + endpoint, auth=(self.user, self.passwd))
+        return response.json()
+
     def get_all_ids(self, endpoint):
+        """
+            Pulls all project IDs from Sonarqube
+        """
         data = self._make_request(endpoint)
         ids = []
         for component in data['components']:
-            dict = {
+            component_dict = {
                 'key': component['key']
             }
-            ids.append(dict)
+            ids.append(component_dict)
         return ids
-    
+
     def get_all_available_metrics(self, endpoint):
+        """
+            Pulls all metrics from Sonarqube
+        """
         data = self._make_request(endpoint)
         metrics = []
         for metric in data['metrics']:
             metrics.append(metric['key'])
         return metrics
-    
+
     def get_measures_by_component_id(self, endpoint):
+        """
+            Pulls measures for a project
+        """
         data = self._make_request(endpoint)
         return data['component']['measures']
 
@@ -52,7 +66,7 @@ class Project:
         self.id = identifier
         self.key = key
         self.metrics = None
-        self.timestamp = datetime.datetime.utcnow().isoformat()
+        self.timestamp = datetime.utcnow().isoformat()
 
     def set_metrics(self, metrics):
         self.metrics = metrics
@@ -66,6 +80,7 @@ class Project:
             database=INFLUX_DB
         )
         influx_client.write_points(self._prepare_metrics())
+        
 
     def _prepare_metrics(self):
         json_to_export = []
